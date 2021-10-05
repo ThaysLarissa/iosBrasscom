@@ -7,34 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Trabalhando com tabelas</title>
+
+    <!--Exemplo de estilo de CSS incorporado-->
+        <style>
+            body{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                color: #000;
+                background-color: grey;
+                
+            }
+            h1{
+                color: rgb(255, 102, 102);
+                text-align: center;
+                text-shadow: 5px 5px 10px lavender;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+            #tabela{
+                color: #ffff;
+                font-size: 16px;
+            }
+                .tituloTable{
+                border: 2px solid rgb(223, 0, 253);
+                } 
+                    .linhaTable{
+                        text-align: center;
+                        color: maroon;
+                    }
+                        #red{
+                            color: red;
+                        }
+                        #blue{
+                            color: blue;
+                        }
+                        #green{
+                            color: green;
+                        }
+        </style>
 </head>
 
 <body>
-    <h1>Criando tabelas</h1>
-    <table>
-       <th>Sr.No</th>
-       <th>Roll No</th>
-       <th>Name</th>
-       <th>Team</th>
+    <h1>Criando tabelas</h1> <br><br>
+    <table id="tabela">
+       <div>
+        <th class="tituloTable">Sr.No</th>
+        <th class="tituloTable">Roll No</th>
+        <th class="tituloTable">Name</th>
+        <th class="tituloTable">Team</th>
+       </div>
        <tr>
            <td>1</td>
            <td>1001</td>
            <td>John</td>
-           <td>RED</td>
+           <td id="red">RED</td>
        </tr>
        <tr>
            <td>2</td>
            <td>1002</td>
            <td>Peter</td>
-           <td>Blue</td>
+           <td id="blue">Blue</td>
        </tr>
        <tr>
         <td>3</td>
         <td>1003</td>
         <td>Henry</td>
-        <td>Green</td>
-    </tr>
-       
+        <td id="green">Green</td>
+        </tr>  
     </table>
 </body>
 </html>
