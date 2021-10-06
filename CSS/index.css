@@ -1,0 +1,128 @@
+/*Estilo geral*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilo do corpo do texto*/
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: #c2c2c2;
+    margin: 0 -50px 50px 50px;
+}
+
+/*Estilo do header*/
+header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 0;
+}
+
+    /*Estilo do logo*/
+    .logoCabecalho{position: absolute;
+        width: 180px;
+        height: auto;
+        border-radius: 50%;
+    }
+        .logoCabecalho img{
+            width: 90%;
+            margin-left: 10%;
+        }
+
+    /*Estilo do menu de navegação*/
+    .cabecalhoMenuNav{
+        position: absolute;
+        right: 30px;
+        bottom: 0;
+    }
+        .cabecalhoMenuNav li{
+            float: left;
+            color: #8a2be2be;
+            width: auto;
+            margin: 0.8rem;
+            font-size: 1rem;
+            list-style: none;
+        }
+            .cabecalhoMenuNav a{
+                text-decoration: none;
+                color: #42047cf8;
+            }
+            .cabecalhoMenuNav a:hover{
+                color: #fff;
+            }
+    
+/*Estilo da descrição*/
+.descricPrincip{}
+    .descricPrincip h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.4rem;
+    }
+    .descricPrincip p{
+        margin: 30px 30px 50px 30px;
+    }
+
+.introdLing{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;   
+    width: 5;
+    padding: 0;
+}
+    .introdLing p{
+        margin-bottom: 2rem;
+        padding: 5px;
+        border-bottom: 2px solid #fff;
+    }
+    .introdLing ul{}
+        .introdLing li{
+            float: left;
+            list-style: none;
+        }
+            .introdLing a{}
+                .introdLing img{
+                    width: 320px;
+                    height: 240px;
+                    border: 2px dashed rgb(122, 74, 235);
+                    margin: 50px 10px 10px 50px;
+                }
+
+/*Estilo do Main*/
+main{}
+    /*Estilo do conteúdo principal*/
+    .conteudoPrincip{}
+        .conteudoPrincip h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.2rem;
+            margin: 100px 0 20px 10px;
+        }
+        .conteudoPrincip p{
+            margin:30px 5px 30px 5px;
+        }
+    
+    /*Estilo da lista de exercícios*/
+    .conteudoListExerc{
+        position: relative;
+    }
+        .conteudoListExerc ol{}
+            .conteudoListExerc ol li{}
+                .conteudoListExerc li ul{}
+                    .conteudoPrincip li ul li{}
+
+/*Estilo do footer*/
+.rodape{
+    border-top: 5px solid #42047cf8;
+    width: 100%;
+    height: 18%;
+    color: #42047cf8;
+    position: relative;
+    float: right;
+    margin-top: 100px;
+}
+    .rodape img{
+        margin-top: 15px;
+        width: 2.5rem;
+        height: auto;
+    }
+    .rodape small{
+    }
