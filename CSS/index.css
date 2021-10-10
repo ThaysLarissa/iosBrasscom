@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 /*Estilo do corpo do texto*/
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -22,7 +23,15 @@ header{
 }
 
     /*Estilo do logo*/
-    .logoCabecalho{position: absolute;
+.cabecalho{
+    background-color: #d4d0d0;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 0;
+}
+    .logoCabecalho{
+        position: absolute;
         width: 180px;
         height: auto;
         border-radius: 50%;
@@ -55,7 +64,9 @@ header{
             }
     
 /*Estilo da descrição*/
-.descricPrincip{}
+.descricPrincip{
+    width: 100%;
+}
     .descricPrincip h1{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 1.4rem;
@@ -63,52 +74,102 @@ header{
     .descricPrincip p{
         margin: 30px 30px 50px 30px;
     }
-
-.introdLing{
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;   
-    width: 5;
-    padding: 0;
+/*Definindo o estilo da imagem do conteúdo principal*/
+figure{
+    width: 100%;
 }
-    .introdLing p{
-        margin-bottom: 2rem;
-        padding: 5px;
-        border-bottom: 2px solid #fff;
+    figure img{
+        width: 100%;
+        margin-bottom: 0;
     }
-    .introdLing ul{}
-        .introdLing li{
-            float: left;
-            list-style: none;
+
+/*definindo o estilo da seção de conteudo*/
+    .aberturaDialog{
+        position: fixed;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0%;
+        background: #42047cf8;
+        z-index: 99999;
+        opacity: 0;
+        -webkit-transition:  400ms ease-in;
+        -moz-transition:  400ms ease-in;
+        transition:  400ms ease-in;
+        pointer-events: auto;
+        display: none;
+    }
+        .aberturaDialog:target{
+            display: block;
+            opacity: 1;
+            pointer-events: auto;
         }
-            .introdLing a{}
-                .introdLing img{
-                    width: 320px;
-                    height: 240px;
-                    border: 2px dashed rgb(122, 74, 235);
-                    margin: 50px 10px 10px 50px;
+        .aberturaDialog div{
+            width: 500px;
+            position: relative;
+            margin: 10% auto;
+            padding: 5px 20px 13px 20px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            background-color: #b079e4f8;
+            text-align: justify;
+        }
+            .aberturaDialog p{
+                margin-top: 2.5%;
+                margin-bottom: 2.5%;
+                padding: 2.5%;
+            }
+            .aberturaDialog img{
+                width: 15%;
+                position: relative;
+                margin-top: 2%;
+                margin-left: 40%;
+            }
+            .aberturaDialog h4, h2{
+                color: rgba(255, 255, 255, 0.87);
+                margin-top: 5%;
+                text-align: center;
+            }
+            .fechar {
+                background-color: #606061;
+                color: #fff;
+                line-height: 25px;
+                position: absolute;
+                right: -12px;
+                text-align: center;
+                top: -10px;
+                width: 24px;
+                text-decoration: none;
+                font-weight: bold;
+                -webkit-border-radius: 12px;
+                -moz-border-radius: 12px;
+                border-radius: 12px;
+            }
+                .fechar:hover{
+                    background-color: #42047cf8;
                 }
 
-/*Estilo do Main*/
-main{}
-    /*Estilo do conteúdo principal*/
-    .conteudoPrincip{}
-        .conteudoPrincip h2{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 1.2rem;
-            margin: 100px 0 20px 10px;
-        }
-        .conteudoPrincip p{
-            margin:30px 5px 30px 5px;
-        }
-    
-    /*Estilo da lista de exercícios*/
-    .conteudoListExerc{
+/*Definindo o estilo da navegação da seção conteúdo*/
+.navConteud{
+    width: 100%;
+    height: 18%;
+    background-color: #42047cf8;
+    color: #fff;
+    position: relative;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    .navTexto{
+        width: 31%;
+        margin: 1%;
         position: relative;
+        float: left;
+        text-align: center;
     }
-        .conteudoListExerc ol{}
-            .conteudoListExerc ol li{}
-                .conteudoListExerc li ul{}
-                    .conteudoPrincip li ul li{}
+        .navTexto a{
+            color: #fff;
+        }
 
 /*Estilo do footer*/
 .rodape{
@@ -127,3 +188,9 @@ main{}
     }
     .rodape small{
     }
+
+@media(max-width: 768px){
+    .princip{
+            width: 100%;
+    }
+}
