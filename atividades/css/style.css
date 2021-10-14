@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.flexboxAlign{
+    display: flex;
+}
+
+.flexboxAlign div{
+    border: 1px #000 solid;
+    padding: 10px;
+}
+    .itemBox1{
+        flex: 2;
+        order: 2;
+    }
+    .itemBox2{
+        flex: 1;
+        order: 1;
+    }
+    .itemBox3{
+        flex: 1;
+        order: 3;
+    }
