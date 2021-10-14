@@ -2,6 +2,7 @@
 
 .flexboxAlign{
     display: flex;
+    align-items: baseline;
 }
 
 .flexboxAlign div{
@@ -10,13 +11,22 @@
 }
     .itemBox1{
         flex: 2;
-        order: 2;
+        order: 4;
+        background-color: #ffebcd;
     }
     .itemBox2{
         flex: 1;
-        order: 1;
+        order: 3;
+        background-color: #ff6789;
     }
     .itemBox3{
-        flex: 1;
-        order: 3;
+        flex: 4;
+        order: 1;
+        align-self: center;
+        background-color: cadetblue;
+    }
+    .itemBox4{
+        flex:3;
+        order: 2;
+        background-color: coral;
     }
