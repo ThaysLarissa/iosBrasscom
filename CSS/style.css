@@ -6,38 +6,32 @@
 
 /*Estilo do corpo do texto*/
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background-color: #c2c2c2;    
+    background-color: #d4d4d8;
 }
 
+/*APLICANDO O FLEXBOX*/
+.princip{
+    display: flex;
+    display: grid;
+}
 /*Estilo do header*/
 header{
-    width: 100%;
-    height: 100px;
+    width: 80px%;
+    height: 80px;
     position: relative;
     top: 0;    
 }
 
     /*Estilo do logo*/
 .cabecalho{
-    background-color: #d4d0d0;
+    background-color: #000;
     width: 100%;
-    height: 100px;
+    height: 50px;
     position: relative;
     top: 0;
 }
-    .logoCabecalho{
-        position: absolute;
-        width: 180px;
-        height: auto;
-        border-radius: 50%;
-    }
-        .logoCabecalho img{
-            width: 90%;
-            margin-left: 10%;
-        }
-
     /*Estilo do menu de navegação*/
     .cabecalhoMenuNav{
         position: absolute;
@@ -46,7 +40,7 @@ header{
     }
         .cabecalhoMenuNav li{
             float: left;
-            color: #8a2be2be;
+            color: #f0f8ff;
             width: auto;
             margin: 0.8rem;
             font-size: 1rem;
@@ -54,24 +48,11 @@ header{
         }
             .cabecalhoMenuNav a{
                 text-decoration: none;
-                color: #42047cf8;
+                color: #f0f8ff;
             }
             .cabecalhoMenuNav a:hover{
-                color: #fff;
+                color: #9370db;
             }
-
-/*Estilo do footer*/
-.rodape{
-    width: 100%;
-    height: 18%;
-    color: #42047cf8;
-    position: relative;
-    float: right;
-}
-    .rodape img{
-        width: 2.5rem;
-        height: auto;
-    }
     
 /*CONFIGURAÇÃO DE ESTILO DA PÁGINA INDEX*/
 /*Estilo da descrição*/
@@ -183,8 +164,71 @@ figure{
             color: #fff;
         }
 
+/*DEFININDO ESTILO DA PÁGINA SOBRE*/
+/*Definindo o estilo da capa*/
+.capaBio{
+    background-image: url(./IMG/fotoSobre.jpeg);
+    width: auto;
+    height: 200px;
+    padding: auto;
+}
+    .capaBio igm{
+        width: auto;
+        height: 200px;
+        padding: auto;
+    }
+
+/*Definindo o estilo do menú da página Bio*/
+.sobreNav{
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 0;
+}
+    /*Estilo do menu de navegação*/
+    .sobreMenuNav{
+        position: absolute;
+        right: 30px;
+        bottom: 0;
+    }
+        .sobreMenuNav li{
+            float: center;
+            color: #f0f8ff;
+            width: auto;
+            margin: 0.8rem;
+            font-size: 1rem;
+            list-style: none;
+        }
+            .sobreMenuNav a{
+                text-decoration: none;
+                color: #f0f8ff;
+            }
+            .sobreMenuNav a:hover{
+                color: #9370db;
+            }
+
+/*Definindo o estilo da main*/
+/*estilo do logo*/
+
+/*Estilo do conteúdo principal da página sobre*/
+
+
 @media(max-width: 768px){
     .princip{
             width: 100%;
     }
 }
+
+/*Estilo do footer*/
+.rodape{
+    width: 100%;
+    height: 18%;
+    color: #42047cf8;
+    position: relative;
+    float: right;
+}
+    .rodape img{
+        width: 2.5rem;
+        height: auto;
+    }
