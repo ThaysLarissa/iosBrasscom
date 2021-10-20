@@ -1,143 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./CSS/style.css">
-        <title>Sobre a futura desenvolvedora</title>
+        <title>Biografia Hellen</title>
     </head>
-
     <body>
-        <header class="cabecalho">
-            <div class="logoCabecalho">
-                <img src="./IMG/logoIOS.png" alt="Logo do IOS">
-            </div>
-            <div class="cabecalhoDescricao">
-                <h1>Sobre a desenvolvedora</h1>
-                <p>Vamos conhecer melhor a desenvolvedora e seu currículo</p>
+        <div class="princip">
+            <!--Adicionando o conteúdo do cabeçalho-->
+            <header class="cabecalho">  
+                <!--Menu de navegação-->
+                <nav class="cabecalhoMenuNav">
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="./sobre.html">Sobre a Hellen</a></li>
+                        <li><a href="./exercicios.html">Exercícios</a></li>
+                        <li><a href="./faleConosco.html">Fale conosco</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!--Capa da página Sobre-->
+            <div class="capaBio">
+                <img src="./IMG/" alt="Foto da Hellen">
             </div>
 
-            <!--Menu de navegação-->
-            <nav class="cabecalhoMenuNav">
+            <!--Adicionando o menu de navegação da página sobre-->
+            <div class="sobreNav">
+                <nav class="sobreMenuNav">
+                    <ul>
+                        <li><a href="#abrirResumo">Resumo básico</a></li>
+                        <li><a href="#abrirHobbies">Hobbies</a></li>
+                        <li><a href="#abrirCurric">Currículo</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--Descrição inicial da página Bio-->
+            <div class="descricBio">
+                <p>Nesta página iremos conhecer melhor quem desenvolveu o site, com informações básicas além do seu currículo e contatos</p>
+            </div>
+            <!--Seções do conteúdo principal da página Sobre-->
+                <!--Seção descrição sobre o Resumo-->
+            <section id="abrirResumo" class="aberturaConteud">
+                <div>
+                    <h2>Resumo Básico</h2>
+                    <ol>
+                        <li> <b> Nome: </b> Hellen Cristina N. Iwata </li>
+                            <li> <b> Data de aniversário: </b>   19/08/2000 </li>
+                            <li> <b> Idade: </b> 21 anos </li>
+                            <li> <b> Signo: </b> Leonina </li>
+                            <li> <b>Time: </b> São Paulo</li>
+                            <li> <b> Estado civil: </b> Solteira </li>
+                            <li> <b> Cargo exercido: </b> Analista na Sitel Sênior do Brasil </li>
+                    </ol>
+                </div>
+            </section>
+
+                <!--Seção descrição sobre o Hobbies-->
+            <section id="abrirHobbies" class="aberturaConteud">
+                <h2>Hobbies</h2>
+                <p>Seus principais hobbies atualmente são:</p>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="./sobre.html">Sobre a Hellen</a></li>
-                    <li><a href="./exercicios.html">Exercícios</a></li>
-                    <li><a href="./faleConosco.html">Fale conosco</a></li>
-                </ul>
-            </nav>  
-        </header>
-        
-        <main>
-            <!--Foto de perfil da desenvolvedora-->
-            <div  class = " logo " >
-               <img src = "./IMG/fotoSobre.jpeg" alt = " Foto da Hellen " >
-            </div>
+                    <li> Curtir os seus finais de semana com sua família, principalmente com os seus primos, mãe e namorada; </li >
+                    <li> Gosta bastante de churrasco; </li >
+                    <li> Gosta de assistir séries (não tem genêro específico, mas não gosta de anime); </li >
+                    <li> Seu gosto musical é bem eclético (podemos dizer que escuta de tudo um pouco). </li >
+                </ul >
+            </section>
 
-           <!--Conteúdo principal da página(Sobre ela, hobbies, currículo)-->
-           <div  class = " conteuPrincipSobre " >
-               <h3> Sobre ela: </h3 >
-                <ol>
-                    <li> <b> Nome: </b>   Hellen Cristina N. Iwata </li>
-                    <li> <b> Data de aniversário: </b>   19/08/2000 </li>
-                    <li> <b> Idade: </b> 21 anos </li>
-                    <li> <b> Signo: </b> Leonina </li>
-                    <li> <b> Estado civil: </b> Solteira </li>
-                    <li> <b> Cargo exercido: </b> Analista na Sitel Sênior do Brasil </li>
-                </ol>
-
-                <!--Descrição sobre os hobbies-->
-               <h3> Sobre os hobbies: </h3>
-               <ul>
-                   <li> Ela gosta de curtir os seus finais de semana com sua família, principalmente com os seus primos, mãe e namorada; </li >
-                   <li> Gosta bastante de churrasco; </li >
-                   <li> Gosta de assistir séries (não tem genêro específico, mas não gosta de anime); </li >
-                   <li> Seu gosto musical é bem eclético (podemos dizer que escuta de tudo um pouco). </li >
-               </ul >
-
-                <h3> Seu currículo: </h3>
-                <!--Dados gerais do currículo-->
-                <section  class = " dadosGerais ">
+                <!--Seção descrição do currículo-->
+            <section id="abrirCurric" class="aberturaConteud">
+                <h2>Currículo</h2>
+                <p>Nesta seção vamos conhecer o currículo dela.</p>
+                    <!--Menu de navegação do currículo-->
+                    <ul>
+                        <li><a href="#abrirDados">Dados Gerais</a></li>
+                        <li><a href="#abrirObjetivos">Objetivos Profissional</a></li>
+                        <li><a href="#abrirFormacao">Formação Acadêmica</a></li>
+                        <li><a href="#abrirCursos">Cursos complementares</a></li>
+                        <li><a href="#abrirExperiencias">Experiências Profissionais</a></li>
+                    </ul>
+                <!--descrição sobre dados gerais da Hellen-->
+                <div id="abrirDados" class="aberturaConteud">
                     <div>
+                        <a href="#fechar" class="fechar">X</a>
                         <h4> Hellen Cristina Neves Iwata </h4>
-                        <P> Brasileira, solteira, 19/08/2000 <br>
-                            Rua Jeny Klabin Segall, 432, Casa 08 <br>
-                            Imirim, São Paulo - SP - CEP: 02542-120 <br>
-                            Celular: (11) 3088-9923 9 <br>
-                            Email: <a href="hellen.iwata001@gmail.com">hellen.iwata001@gmail.com</a> <br>
-                            Linkedin: <a  href = " www.linkedin.com/in/helleniwata " > Hellen Iwata </a>  <br>
-                            GitHub: <a  href = " https://github.com/HellenIwata " > Hellen Iwata </a>
-                        </p >
-                    </div >
-                </section>
 
-                <!--Seção objetivos profissionais-->
-                <section  class = " objetivos " >
-                    <div  class = " objetivoProfissionais " >
-                        <h3 > Objetivos Profissionais </h3 >
-                        <hr >
-                        <ul >
-                            <li > Área de Tecnologia </li >
-                            <li > Área Administrativa </li >
-                        </ul >
-                    </div >
-                </section>
+                        <p> Brasileira, solteira, 19/08/2000</p>
 
-                <!--Seção formação acadêmica-->
-                <section  class = " formacao ">
-                    <div  class = " formacaoAcademica ">
-                        <h3 > Formação acadêmica </h3>
-                        <hr >
+                        <p> Rua Jeny Klabin Segall, 432, Casa 08 <br>
+                        Imirim, São Paulo - SP - CEP: 02542-120
+                        </p>
+
+                        <p> Celular: <a href="">(11) 3088-9923</a></p> 
+
+                        <p>Email: <a href="hellen.iwata001@gmail.com">hellen.iwata001@gmail.com</a></p>
+
+                        <p>Linkedin: <a  href = " www.linkedin.com/in/helleniwata " > Hellen Iwata </a></p>
+
+                        <p>GitHub: <a  href = " https://github.com/HellenIwata " > Hellen Iwata</a></p>
+                    </div>
+                </div>
+
+                <!--Descrição dos objetivos profissionais-->
+                <div id="abrirObjetivos" class="aberturaConteud">
+                        <div>
+                            <a href="#fechar" class="fechar">X</a>
+                            <ul>
+                                <li> Área de Tecnologia </li>
+                                <li> Área Administrativa </li>
+                            </ul>
+                        </div>
+                </div>
+
+                <!--Descrição da formação acadêmica-->
+                <div id="abrirFormacao" class="aberturaConteud">
+                    <div>
+                        <a href="#fechar" class="fechar">X</a>
                         <p> Ensino superior em Sistema de Informação - Cursando, Previsão e término: dezembro / 2025 <br>
-                        Instituição de ensino - Faculdades Metropolitanas Unidas (FMU)
+                            Instituição de ensino - Faculdades Metropolitanas Unidas (FMU)
                         </p>
                         <p> Ensino Técnico em Administração para Empresas - Concluído em Dezembro / 2017 <br>
-                        Instituição de ensino - ETEC Albert Einstein
-                        </p>
-                    </ div >
-                </section>
-
-                <!--Seção de curso complementares-->
-                <section  class = " cursos ">
-                    <div  class = " cursosComplementares ">
-                        <h3> Cursos complementares </h3>
-                        <hr>
-                        
-                        <h4> IOS - Instituto da Oportunidade Social </h4 >
-                        <p> <i> Programação Web Front-End </i>  <br>
-                        Carga Horária: 365 horas <br >
-                        Previsão de término: Dezembro / 2021
-                        </p>
-                        <p> <i> Introdução à Programação Web </i>  <br>
-                        Carga Horária: 345 horas <br>
-                        Concluído: Agosto / 2020
-                        </ p >
-                        <p> <i> Gestão Empresarial com o ERP software da TOTVS </i> <br>
-                        Carga Horária: 345 horas <br>
-                        Concluído: dezembro / 2018
-                        </p>
-
-                        <h4> Fundação Bradesco </h4>
-                        <p> <i> Linguaguem de programação Python - Básico </i>  <br >
-                        Carga Horária: 18 horas <br>
-                        Concluído: Agosto / 2021
-                        </p>
-
-                        <h4> DIO - Digital Innovation One </h4>
-                        <p> <i> Programação para intenet com JavaScript </i>  <br>
-                        Carga Horária: 2 horas <br>
-                        Concluído: Agosto / 2021
+                            Instituição de ensino - ETEC Albert Einstein
                         </p>
                     </div>
-                </section>
+                </div>
 
-                <!--Seção sobre as experiências profissionais-->
-                <section  classe = " expProfi ">
-                    <div  class = " experienciaProfis ">
-                        <h3> Experiências Profissionais </h3>
-                        <hr>
+                <!--Descrição dos cursos complementares-->
+                <div id="abrirCursos" class="aberturaConteud">
+                    <div>
+                        <a href="#fechar" class="fechar">X</a>
+
+                        <h4> IOS - Instituto da Oportunidade Social </h4 >
+                            <p> <i> Programação Web Front-End </i>  <br>
+                            Carga Horária: 365 horas <br >
+                            Previsão de término: Dezembro / 2021
+                            </p>
+                            <p> <i> Introdução à Programação Web </i>  <br>
+                            Carga Horária: 345 horas <br>
+                            Concluído: Agosto / 2020
+                            </p>
+                            <p> <i> Gestão Empresarial com o ERP software da TOTVS </i> <br>
+                            Carga Horária: 345 horas <br>
+                            Concluído: dezembro / 2018
+                            </p>
+
+                        <h4> Fundação Bradesco </h4>
+                            <p> <i> Linguaguem de programação Python - Básico </i>  <br >
+                            Carga Horária: 18 horas <br>
+                            Concluído: Agosto / 2021
+                            </p>
+
+                        <h4> DIO - Digital Innovation One </h4>
+                            <p> <i> Programação para intenet com JavaScript </i>  <br>
+                            Carga Horária: 2 horas <br>
+                            Concluído: Agosto / 2021
+                            </p>
+                    </div>
+                </div>
+
+                <!--Descrição das experiências Profissionais-->
+                <div id="abrirExperiencias" class="aberturaConteud">
+                    <div>
+                        <a href="#fechar" class="fechar">X</a>
                         <p>
                             <b> Empresa: </b> Sitel do Brasil <br>
                             <b> Carga: </b>  Analista de atendimento Sênior <br>
@@ -156,13 +184,14 @@
                             <b> Período: </b> Fevereiro / 2019 à Agosto / 2021
                         </p>
                     </div>
-                </section>
-           </div>
-        </main>
-        <footer class="rodape">
-            <small><sup>&copy;</sup> 2021 - Todos os direitos reservados</small>
-            <a href="https://api.whatsapp.com/send?phone=11930889923"><img src="./IMG/iconWpp.png" alt="Icone do Wpp"></a>
-            <a href="mailto:hellen.iwata001@gmail.com"><img src="./IMG/iconEmail.png" alt="Icone E-mail"></a>
-        </footer>
+                </div>
+            </section>
+            
+            <footer class="rodape">
+                <small><sup>&copy;</sup> 2021 - Todos os direitos reservados</small>
+                <a href="https://api.whatsapp.com/send?phone=11930889923"><img src="./IMG/iconWpp.png" alt="Icone do Wpp"></a>
+                <a href="mailto:hellen.iwata001@gmail.com"><img src="./IMG/iconEmail.png" alt="Icone E-mail"></a>
+            </footer>
+        </div>
     </body>
 </html>
