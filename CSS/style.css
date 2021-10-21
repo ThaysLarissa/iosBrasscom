@@ -181,7 +181,7 @@ figure{
 /*Definindo o estilo do menú da página Bio*/
 .sobreNav{
     background-color: #000;
-    width: 100%;
+    width: 60%;
     height: 50px;
     position: relative;
     top: 0;
@@ -189,11 +189,11 @@ figure{
     /*Estilo do menu de navegação*/
     .sobreMenuNav{
         position: absolute;
-        right: 30px;
+        right: 50px;
         bottom: 0;
     }
         .sobreMenuNav li{
-            float: center;
+            float: left;
             color: #f0f8ff;
             width: auto;
             margin: 0.8rem;
@@ -212,7 +212,66 @@ figure{
 /*estilo do logo*/
 
 /*Estilo do conteúdo principal da página sobre*/
+.aberturaConteud{
+    position: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0%;
+    background: #42047cf8;
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition:  400ms ease-in;
+    -moz-transition:  400ms ease-in;
+    transition:  400ms ease-in;
+    pointer-events: auto;
+    display: none;
+}
+    .aberturaConteud:target{
+        display: block;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .aberturaConteud div{
+        width: 500px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        background-color: #b079e4f8;
+        text-align: justify;
+    }
+        .aberturaConteud p{
+            margin-top: 2.5%;
+            margin-bottom: 2.5%;
+            padding: 2.5%;
+        }
+        .aberturaConteud h4, h2{
+            color: rgba(255, 255, 255, 0.87);
+            margin-top: 5%;
+            text-align: center;
+        }
 
+            #abrirHobbies li{
+                list-style: none;
+            }
+        #abrirCurric p{
+            text-align: center;
+        }
+            #abrirCurric li{
+                list-style: none;
+                text-align: center;
+            }
+                #abrirCurric a{
+                    text-decoration: none;
+                    color: #000;
+                    font-weight: bold;
+                }
+                #abrirCurric a:hover{
+                    color: #f0f8ff;
+                }
 
 @media(max-width: 768px){
     .princip{
